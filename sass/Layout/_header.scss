@@ -1,0 +1,19 @@
+@import "../Abstracts/variables";
+
+.header {
+
+    ul {
+        list-style: $Default_Decoration;
+        
+        li {
+            display: inline;
+            font-family: $UsedFont;
+            
+            a {
+                position: relative;
+                left: 8pc;
+                margin-left: 50px;
+            }
+        }
+    }
+}

@@ -1,0 +1,6 @@
+@mixin hide($Distance,$Side) {
+
+    @if $Distance < 0% && $Side {
+        background-color: black;
+    }
+}

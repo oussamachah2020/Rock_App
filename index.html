@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="sass/main.css">
+    <title>Rock It</title>
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <h1><a href="" title="Home Page">Rock World</a></h1>
+            <input type="search" class="Search" placeholder="Search">
+        </ul>
+    </div>
+    <div class="container">
+        <li>
+            <button class="sideBar">|||</button>
+        </li>
+            <ul class="list active">
+                <li>
+                    <a href=""><img src="image/heart-icon.png"> Favorite</a>
+                </li>
+                <li>
+                    <a href=""><img src="image/playlist.png"> Playlist</a>
+                </li>
+                <li>
+                    <input type="file" id="add">
+                </li>
+            </ul>
+        </ul>
+        <audio src="" id="music"></audio>
+        <div class="Bands Play">
+            <div class="ProgressContainer">
+                <div class="progress"></div>
+            </div>
+            <div class="cover"></div>
+                <button class="prevbtn btn">
+                    <img src="image/prevBtn.png">
+                </button>
+                <button class="Playbtn btn">
+                    <img src="image/playBtn.png" id="switch">
+                </button>
+                <button class="Nextbtn btn">
+                    <img src="image/NextBtn.png">
+            </div>
+        </div>
+    </div>
+    <div class="Playlist">
+        <ol>
+            <li class="SongName" value="0" data-id="0"></li>
+            <li class="SongName" value="1" data-id="1"></li>
+            <li class="SongName" value="2" data-id="2"></li>
+            <li class="SongName" value="3" data-id="3"></li>
+            <li class="SongName" value="4" data-id="4"></li>
+        </ol>
+    </div>
+    <script src="script/app.js" type="module"></script>
+</body>
+</html>

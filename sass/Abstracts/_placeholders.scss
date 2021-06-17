@@ -1,0 +1,6 @@
+@import "../Abstracts/variables";
+
+input::placeholder {
+    font-family: $UsedFont;
+    color: #000;
+}

@@ -1,0 +1,13 @@
+@import "../Abstracts/variables";
+
+a {
+    font-family: $UsedFont;
+    color: #fff;
+    text-decoration: $Default_Decoration;
+    margin: 10px;
+    transition: $Transition;
+
+    &:hover {
+        opacity: .5;
+    }
+}

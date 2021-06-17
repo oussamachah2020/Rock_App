@@ -1,0 +1,158 @@
+
+@import "../Abstracts/variables" , "../Abstracts/mixins";
+@import "../Base/reset";
+@import "../Abstracts/placeholders";
+@import "../Components/icons" , "../Components/btns";
+@import "../Abstracts/responsive-rules";
+
+body {
+    background-color:  hsla(233, 61%, 17%, 0.979);
+    color: $Elements-Color;
+}
+
+h1,.Search {
+    display: inline;
+    margin-top: 20px;
+}
+
+h1 {
+    margin-left: 18pc;
+}
+
+input.Search {
+    border: none;
+    outline: none;
+    padding: 10px 0 10px 10px;
+    border-radius: 5px;
+    position: relative;
+    bottom: 6px;
+    left: 6pc;
+    background-image: url($Search_Icon);
+    background-repeat: no-repeat;
+    background-position: 14.5vmax;
+    transition: padding 0.4s ease-in-out;
+
+    &:focus {
+        padding: 10px 10pc 10px 10px;
+        background-position: 27vmax;
+    }
+}
+
+.container {
+    border: 1px solid white;
+    margin: 2pc 5pc 0 5pc;
+    background: $Elements-Color;
+    border-radius: 5px;
+
+    li,ul {
+        list-style: none;
+    }
+
+    .list {
+        background-color: rgba(224, 220, 220, 0.295);  
+        width: 25%;
+        margin: 20px 20px;
+        padding: 15px;
+        box-shadow: 1px 4px 25px  rgba(0, 0, 0, 0.787);
+        opacity: .8;
+        transition: $Transition;
+        transform: translateX($Distance);
+        border-radius: 3px;
+    
+        li {
+            padding: 10px;
+
+            a {
+                color: $MainColor;
+                margin-left: 2pc;
+                font-family: $Rock;
+                font-weight: bold;
+                letter-spacing: 5px;
+    
+                img {
+                    position: relative;
+                    top: 8px;
+                }
+            }
+        }
+    }
+}
+
+.Bands {
+    border: 1px solid rgba(0, 0, 0, 0.863);
+    width: 30%;
+    height: 28pc;
+    border-radius: 3px;
+    position: relative;
+    bottom: 10pc;
+    left: 6pc;
+    box-shadow: 1px 4px 25px  rgba(0, 0, 0, 0.787);
+
+    img {
+        border-radius: 3px;
+        position: relative;
+        bottom: 2.9pc;
+    }
+
+    .ProgressContainer {
+        background-color: #000;
+        border-radius: 8px;
+        cursor: pointer;
+        margin: 20px 0;
+        width: 100%;
+        height: 6px;
+        //visibility: hidden;
+    
+        .progress {
+            background-color: rgb(70, 6, 6);
+            width: 0;
+            height: 100%;
+            border-radius: 8px;
+            transition: width .1s linear;
+        }
+    }
+    
+}
+
+.show-timeLine {
+    visibility: visible;
+}
+
+.Playlist {
+    border: 1px solid black;
+    position: relative;
+    bottom: 37pc;
+    box-shadow: 1px 4px 25px  rgba(0, 0, 0, 0.787);
+    border-radius: 5px;
+    transition: .5s ease;
+    margin: 0 10px 0 40pc;
+    width: 38%;
+
+    ol {
+        list-style: none;
+        
+        li {
+            list-style: none;
+            padding: 15px 0 20px 20px;
+            width: 100%;
+            border: 1px solid rgb(192, 192, 192);
+            color: #000;
+            font-size: 20px;
+            position: relative;
+            cursor: pointer;   
+            font-family: $Rock;  
+            font-weight: bold;   
+            transform: translateX(-2pc); 
+        }
+    }
+}
+
+.first {
+    padding-top: 8px;
+}
+
+/*@media only screen and (max-width: 375px) {
+    body {
+      background-color: lightblue;
+    }
+  }*/

@@ -1,0 +1,15 @@
+.sideBar {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 20px;
+    letter-spacing: 5px;
+    cursor: pointer;
+    margin: 20px 20px;
+}
+
+.Bands {
+    .btn {
+        @extend .sideBar;
+        transform: translateX(30px);
+    }
+}
